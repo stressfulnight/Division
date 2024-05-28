@@ -1,16 +1,12 @@
 
------- * Quantum priv_9 Menu * ------
---[[
-    # Rewriten by: Quantum
-]]
 
 repeat
     task.wait()
  until game:IsLoaded()
 
 -- Menu/UI Creation
-if not isfile("Quantum") then
-    makefolder("Quantum")
+if not isfile("Division") then
+    makefolder("Division")
  end
  
  local menu = game:GetObjects("rbxassetid://17640085329")[1] 
@@ -291,14 +287,14 @@ if not isfile("Quantum") then
          local ping = string.format('%.0f', game.Stats.Network.ServerStatsItem["Data Ping"]:GetValue())
          local uid = "1"
          local fpsValue = string.split(game.Stats.Workspace.Heartbeat:GetValueString(), ".")[1]
-         WaterMarkLabel.Text = 'Quantum<font color="rgb(74, 74, 74)"></font> - uid: <font color="rgb(74, 74, 74)">' .. uid .. '</font> / fps: <font color="rgb(255, 255, 255)">' .. fpsValue .. '</font> / ping: <font color="rgb(255, 255, 255)">' .. ping .. '</font> / time: <font color="rgb(255, 255, 255)">' .. time .. '</font>'
+         WaterMarkLabel.Text = "Division<font color="rgb(74, 74, 74)"></font> - uid: <font color="rgb(74, 74, 74)">' .. uid .. '</font> / fps: <font color="rgb(255, 255, 255)">' .. fpsValue .. '</font> / ping: <font color="rgb(255, 255, 255)">' .. ping .. '</font> / time: <font color="rgb(255, 255, 255)">' .. time .. '</font>'
        end
     end)
     return Watermark
  end
  
  local library = {
-    Title = 'Quantum<font color="rgb(74, 74, 74)"></font> | Private',
+    Title = 'Division<font color="rgb(74, 74, 74)"></font> | Private',
     keybind = Enum.KeyCode.RightBracket,
     Watermark = createWatermark(),
        Colors = {
@@ -350,13 +346,13 @@ if not isfile("Quantum") then
     
     menu.bg.Position = UDim2.new(0.5,-menu.bg.Size.X.Offset/2,0.5,-menu.bg.Size.Y.Offset/2)
     menu.Parent = CloneCore
-    menu.Name = "Quantum_gui"
+    menu.Name = "Division_gui"
     local ProtectGui = protectgui or (syn and syn.protect_gui) or (function() end)
     local CloneScreenGui = cloneref(Instance.new("ScreenGui"))
     ProtectGui(CloneScreenGui)   
     CloneScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Global
     CloneScreenGui.Parent = CloneCore
-    CloneScreenGui.Name = "Quantum_gui"
+    CloneScreenGui.Name = "Division_gui"
 
     local TweenService = game:GetService("TweenService")
 
@@ -390,7 +386,7 @@ if not isfile("Quantum") then
         TextLabel.BorderSizePixel = 0
         TextLabel.Size = UDim2.new(0, 676, 0, 23)
         TextLabel.Font = Enum.Font.SourceSans
-        TextLabel.Text = "Quantum | #1"
+        TextLabel.Text = "Division | pub"
         TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
         TextLabel.TextSize = 14.000
         
