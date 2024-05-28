@@ -390,7 +390,7 @@ if not isfile("Division") then
         TextLabel.BorderSizePixel = 0
         TextLabel.Size = UDim2.new(0, 676, 0, 23)
         TextLabel.Font = Enum.Font.SourceSans
-        TextLabel.Text = "Division | @xenakigoat & @monkey.vio "
+        TextLabel.Text = "Division | @xenakigoat & @monkey.vio & @uncbyte & @xlck "
         TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
         TextLabel.TextSize = 14.000
         
