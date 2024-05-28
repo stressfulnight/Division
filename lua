@@ -1,4 +1,8 @@
 
+------ * division priv_9 Menu * ------
+--[[
+    # Rewriten by: xenaki
+]]
 
 repeat
     task.wait()
@@ -287,7 +291,7 @@ if not isfile("Division") then
          local ping = string.format('%.0f', game.Stats.Network.ServerStatsItem["Data Ping"]:GetValue())
          local uid = "1"
          local fpsValue = string.split(game.Stats.Workspace.Heartbeat:GetValueString(), ".")[1]
-         WaterMarkLabel.Text = "Division<font color="rgb(74, 74, 74)"></font> - uid: <font color="rgb(74, 74, 74)">' .. uid .. '</font> / fps: <font color="rgb(255, 255, 255)">' .. fpsValue .. '</font> / ping: <font color="rgb(255, 255, 255)">' .. ping .. '</font> / time: <font color="rgb(255, 255, 255)">' .. time .. '</font>'
+         WaterMarkLabel.Text = 'Division<font color="rgb(74, 74, 74)"></font> - uid: <font color="rgb(74, 74, 74)">' .. uid .. '</font> / fps: <font color="rgb(255, 255, 255)">' .. fpsValue .. '</font> / ping: <font color="rgb(255, 255, 255)">' .. ping .. '</font> / time: <font color="rgb(255, 255, 255)">' .. time .. '</font>'
        end
     end)
     return Watermark
@@ -386,7 +390,7 @@ if not isfile("Division") then
         TextLabel.BorderSizePixel = 0
         TextLabel.Size = UDim2.new(0, 676, 0, 23)
         TextLabel.Font = Enum.Font.SourceSans
-        TextLabel.Text = "Division | pub"
+        TextLabel.Text = "Division | @xenakigoat & @monkey.vio "
         TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
         TextLabel.TextSize = 14.000
         
